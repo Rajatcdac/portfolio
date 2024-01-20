@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            position: fixed;
+            overflow: hidden;
+            top: 0; 
+  width: 100%; 
+        }
+
+        body {
+            background-color: #0C356A;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: #192655;
+            
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 23px;
+
+        }
+
+        .left {
+            font-size: 1.5vw;
+        }
+
+
+
+        .right li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .right li a:hover {
+            color: rgb(228, 91, 41);
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 150px 0px;
+        }
+
+        .firstSection div {
+            width: 30%;
+        }
+
+        .rightSection div {
+            width: 30%;
+        }
+
+        .leftSection {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        .rightSection img {
+            width: 80%;
+            margin-top: 2vw;
+        }
+
+        .leftSection h1 {
+            font-size: 50px;
+        }
+
+        .leftSection span {
+            color: rgb(28, 179, 212);
+        }
+
+        .secondSection {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 15vw;
+
+            /* background-color: red; */
+        }
+
+        .headline {
+            margin-left: 3vw;
+            padding-top: 0.5vw;
+
+        }
+
+        .box-1 {
+            width: 70%;
+            height: 60%;
+            /* background-color: white;
+            border-bottom: red; */
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            opacity: 90%;
+            border: 10px;
+            border-radius: 10px;
+            overflow: scroll;
+            overflow: hidden;
+        }
+
+        .box-1-1 {
+            height: 95%;
+            width: 20%;
+
+            background-color: white;
+            border-radius: 10px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            border-radius: 10px solid black;
+
+        }
+
+     .box-1-1:hover {
+            background-color: lightgray;
+        
+
+        }
+
+        .box-1-1 img {
+
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+
+
+        .thirdSection {
+            display: flex;
+
+            justify-content: center;
+            gap: 2vw;
+
+            margin: 25px 0px;
+            height: 30vw;
+            width: 100%;
+            /* background-color: red; */
+
+        }
+
+        .left-3 {
+            width: 800px;
+            height: 400px;
+            /* background-color: white; */
+            margin-top: 100px;
+            
+
+        }
+
+        .left-3:hover{
+            box-shadow: 7px 40px;
+        }
+
+        .left-3 img {
+            width: 800px;
+            height: 400px;
+        }
+
+        .left-3 h1 {
+            color: white;
+        }
+
+        .right-3 {
+            width: 500px;
+            height: 400px;
+            /* background-color: red; */
+            margin-top: 100px;
+            display: flex;
+            align-items: center;
+        }
+
+        .project {
+            display: flex;
+            justify-content: center;
+            margin-top: 10vw;
+            font-size: 1.5vw;
+        }
+
+        .aboutme{
+            display: flex;
+            justify-content: center;
+            font-size: 1.5vw;
+            margin-top: 8vw;
+        }
+        .fourthSection{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 30vw;
+            /* background-color: red; */
+            gap: 3vw;
+            padding-top: 3vw;
+        }
+        .left-4{
+            height: 400px;
+            width: 600px;
+            /* background-color: white; */
+            overflow-y:scroll;
+        }
+        .left-4::-webkit-scrollbar {
+        display: none;
+          }
+
+        .right-4{
+            height: 370px;
+            width: 300px;
+            
+            background-color: white;
+            /* object-fit: cover; */
+        }
+        .right-4 img{
+            height: 370px;
+            width: 300px;
+            border-radius: 10px;
+           
+            
+            object-fit: cover;
+            border: 10px solid white;
+            
+        }
+
+        .leftSection a{
+            text-decoration: none;
+            color: white;
+        }
+
+.download-section button{
+ 
+          height: 50px;
+          width: 200px;
+          border-radius: 5px;
+          background-color: black;
+
+}
+         
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav >
+            <div class="left">Rajat's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#pr">Projects</a></li>
+                    <li><a href="#abt">About Me</a></li>
+                    <li><a href="/contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <h1>Hello, I am Rajat</h1>
+                <h2>and I am a Passionate <span id="element"></span></h2>
+                <br>
+                <br>
+                <div class="download-section">
+                        <button><a download href="Rajat Lokhande.pdf"><h3>Download my resume</h3></a></button>
+                </div>
+               
+
+
+            </div>
+            <div class="rightSection">
+                <img src="developerimage.png" alt="">
+            </div>
+        </section>
+        <section class="secondSection">
+            <div class="headline">
+                <h1>Languages i know</h1>
+            </div>
+            <div class="box-1">
+                <div class="box-1-1">
+                    <img src="javapng.png" alt="">
+                </div>
+                <div class="box-1-1">
+                    <img src="react.png" alt="">
+                </div>
+                <div class="box-1-1">
+                    <img src="javascript.png" alt="">
+                </div>
+                <div class="box-1-1">
+                    <img src="html.png" alt="">
+                </div>
+                <div class="box-1-1">
+                    <img src="css.png" alt="">
+                </div>
+                <div class="box-1-1">
+                    <img src="net1.png" alt="">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="project" id="pr">
+            <h1>My Projects</h1>
+        </section>
+
+
+
+        <section class="thirdSection">
+
+            <div class="left-3">
+                <h1>Pixelspot</h1>
+                <img src="WhatsApp Image 2024-01-15 at 1.24.32 PM.jpeg" alt="">
+            </div>
+            <div class="right-3">
+                <p>PixelSpot is an online platform dedicated to photographers that gives them the ease of storing their picture collections online in security. They can also share their snaps on the portal, which can be seen by users of the site, and registered users can also download pictures. In terms of security, each shared picture is first reviewed by the admin panel for illegal content.</p>
+            </div>
+
+
+        </section>
+
+        <section class="aboutme" id="abt">
+           <h1>About Me</h1>
+        </section>
+
+        <section class="fourthSection">
+           <div class="left-4">
+            <h1 style="font-size: 50px;text-decoration:underline;">Education</h1>
+            <br>
+            <br>
+            
+
+            <h2 " >Post-Graduation</h2>
+            <br>
+            
+            <h3>Center for development of advanced computing </h3>
+            <h5>Sunbeam institute of information and technology</h5>
+            <h6>March'2023 - August'2023</h6>
+            <br>
+            <br>
+            <h2>Graduation</h2>
+            <br>
+            <h3>Mechanical Engineering</h3>
+            <h5>Chamelidevi school of engineering</h5>
+            <h6>2015-2019</h6>
+            <br>
+            <br>
+            <h2 " >Higher Secondary Education</h2>
+            <br>
+            <h3>XII</h3>
+            <h5>Aadarsh Bal Vinay Mandir</h5>
+            <h6>2013-2014</h6>
+            <br>
+            <br>
+            <h2 " >Higher Secondary Education</h2>
+            <br>
+            <h3>XI</h3>
+            <h5>Christian Eminent School</h5>
+            <h6>2011-2012</h6>
+           </div>
+           <div class="right-4">
+            <img src="profileimage.jpeg"  alt="">
+           </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Frontend Developer'],
+            typeSpeed: 100,
+        });
+    </script>
+</body>
+
+</html>

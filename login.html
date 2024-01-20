@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lopin Page</title>
+    <style>
+        body {
+            background-color: white;
+        }
+
+
+
+        input[type="text"]::placeholder {
+
+            color: gray;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        input[type="password"]::placeholder {
+
+            color: gray;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .login {
+            height: 30vw;
+            width: 27vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 5vw 5vw;
+            border: 5px solid black;
+            border-radius: 10px;
+
+
+
+        }
+
+        .login:hover {
+            box-shadow: 7px 7px;
+            color: black;
+        }
+
+        .login h1 {
+            color: black;
+        }
+
+        button:hover {
+            background-color: royalblue;
+            color: white;
+        }
+
+        button {
+            width: 7vw;
+            height: 2vw;
+            border: none;
+            font-size: 1vw;
+            font-weight: 100;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+
+
+        }
+
+        button a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+
+            /* border: 10px solid black; */
+
+        }
+
+        input {
+            height: 2vw;
+            width: 15vw;
+
+            border: 2px solid black;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login">
+            <h1>Login</h1>
+            <input required type="text" placeholder="username" />
+            <br>
+            <br>
+            <input required type="password" placeholder="password" />
+            <br>
+            <br>
+            <a href="/home"> <button>Login</button></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
